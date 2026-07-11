@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Gallery - RIT Education & Welfare Society</title>
+  <meta name="description" content="View photos of our skill development batches, healthcare camps, blood donation drives, tree plantations, and society celebrations.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Info Bar (Dynamic) -->
+  <div id="topbar-placeholder"></div>
+
+  <!-- Sticky Navbar (Dynamic) -->
+  <nav id="navbar-placeholder" class="navbar"></nav>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <h1 class="page-title">Media Gallery</h1>
+      <div class="page-breadcrumbs">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Gallery</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <span class="hero-tag" style="background-color: rgba(244, 163, 0, 0.08); color: var(--accent-hover);">Visual Archive</span>
+        <h2 class="section-title">Our Activities in Pictures</h2>
+        <p class="section-subtitle">A collection of real-time images capturing vocational trainings, student programs, and welfare initiatives.</p>
+      </div>
+
+      <!-- Filter Buttons (Matches user requested categories) -->
+      <div class="gallery-filter-tabs">
+        <button class="gallery-filter-btn active" data-filter="All">All Images</button>
+        <button class="gallery-filter-btn" data-filter="Education">Education</button>
+        <button class="gallery-filter-btn" data-filter="Seminars">Seminars</button>
+        <button class="gallery-filter-btn" data-filter="Workshops">Workshops</button>
+        <button class="gallery-filter-btn" data-filter="Skill Development">Skill Development</button>
+        <button class="gallery-filter-btn" data-filter="Community Welfare">Community Welfare</button>
+        <button class="gallery-filter-btn" data-filter="Women Empowerment">Women Empowerment</button>
+        <button class="gallery-filter-btn" data-filter="Blood Donation">Blood Donation</button>
+        <button class="gallery-filter-btn" data-filter="Plantation Drive">Plantation Drive</button>
+        <button class="gallery-filter-btn" data-filter="Celebrations">Celebrations</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" id="full-gallery-container">
+        <!-- Rendered Dynamically from data.js based on category filter -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal Container -->
+  <div class="lightbox-modal" id="lightbox-modal" onclick="closeLightbox()">
+    <div class="lightbox-content-wrapper" onclick="event.stopPropagation()">
+      <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+      <img id="lightbox-img" src="" alt="Zoomed view" class="lightbox-img">
+      <div class="lightbox-caption">
+        <h4 id="lightbox-title">Image Title</h4>
+        <span id="lightbox-category">Category</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer (Dynamic) -->
+  <footer id="footer-placeholder" class="footer"></footer>
+
+  <!-- Floating Actions (Dynamic) -->
+  <div id="floating-actions-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

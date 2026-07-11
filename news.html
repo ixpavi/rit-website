@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News & Events - RIT Education & Welfare Society</title>
+  <meta name="description" content="Official bulletin of RIT Education & Welfare Society. Read news columns, school announcements, administrative notices, and active event calendars.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Info Bar (Dynamic) -->
+  <div id="topbar-placeholder"></div>
+
+  <!-- Sticky Navbar (Dynamic) -->
+  <nav id="navbar-placeholder" class="navbar"></nav>
+
+  <!-- Page Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <h1 class="page-title">News & Announcements</h1>
+      <div class="page-breadcrumbs">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>News</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview description -->
+  <section class="section section-bg" style="padding-bottom: 2rem;">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <span class="hero-tag" style="background-color: rgba(244, 163, 0, 0.08); color: var(--accent-hover);">Bulletin</span>
+        <h2 class="section-title">Media Center & Notices</h2>
+        <p class="section-subtitle">Stay informed with scheduled programs, public alerts, administrative decisions, and recent project completions in active Indian districts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Portal Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="news-portal-grid">
+        <!-- Main news feed columns -->
+        <div>
+          <!-- Category: Latest News -->
+          <h2 class="mgmt-section-header" style="margin-top: 0;"><i data-lucide="newspaper" style="vertical-align: middle; margin-right: 0.5rem; color: var(--secondary);"></i> Latest Press Releases & News</h2>
+          <div class="news-feed-wrapper" id="portal-news-col" style="margin-bottom: 3.5rem;">
+            <!-- Dynamic News Rendered here -->
+          </div>
+
+          <!-- Category: Announcements -->
+          <h2 class="mgmt-section-header"><i data-lucide="megaphone" style="vertical-align: middle; margin-right: 0.5rem; color: var(--secondary);"></i> Academic & General Announcements</h2>
+          <div class="news-feed-wrapper" id="portal-announcements-col" style="margin-bottom: 3.5rem;">
+            <!-- Dynamic Announcements Rendered here -->
+          </div>
+
+          <!-- Category: Notices -->
+          <h2 class="mgmt-section-header"><i data-lucide="bell" style="vertical-align: middle; margin-right: 0.5rem; color: var(--secondary);"></i> Administrative Board Notices</h2>
+          <div class="news-feed-wrapper" id="portal-notices-col">
+            <!-- Dynamic Notices Rendered here -->
+          </div>
+        </div>
+
+        <!-- Sidebar for Upcoming Events -->
+        <div>
+          <div class="events-sidebar" id="events">
+            <h3 class="sidebar-title"><i data-lucide="calendar"></i> Event Calendar</h3>
+            <div class="sidebar-events-list" id="portal-events-sidebar">
+              <!-- Dynamic Events Rendered here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Dynamic) -->
+  <footer id="footer-placeholder" class="footer"></footer>
+
+  <!-- Floating Actions (Dynamic) -->
+  <div id="floating-actions-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
