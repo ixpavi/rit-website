@@ -3,9 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>News & Events - RIT Education & Welfare Society</title>
-  <meta name="description" content="Official bulletin of RIT Education & Welfare Society. Read news columns, school announcements, administrative notices, and active event calendars.">
+  <title>News & Events - RIT Education and Welfare Society</title>
+  <meta name="description" content="Read news updates, school announcements, and events calendar coordinates of RIT Education and Welfare Society.">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/RIT%20logo%202.png">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="News & Events - RIT Education and Welfare Society">
+  <meta property="og:description" content="Latest announcements, news coordinates, and academic calendars of RIT Education and Welfare Society.">
+  <meta property="og:image" content="assets/images/RIT%20logo%202.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="News & Events - RIT Education and Welfare Society">
+  <meta property="twitter:description" content="Latest announcements, news coordinates, and academic calendars of RIT Education and Welfare Society.">
+  <meta property="twitter:image" content="assets/images/RIT%20logo%202.png">
+
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "RIT Education and Welfare Society",
+    "url": "index.html",
+    "logo": "assets/images/RIT logo 2.png",
+    "foundingDate": "2014",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "B-9, Shri Ram Colony, Borkheda",
+      "addressLocality": "Kota",
+      "addressRegion": "Rajasthan",
+      "postalCode": "324001",
+      "addressCountry": "IN"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-96676-09999",
+      "contactType": "Enquiry Desk",
+      "email": "riteducation013@gmail.com"
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -27,54 +66,22 @@
     </div>
   </section>
 
-  <!-- Overview description -->
-  <section class="section section-bg" style="padding-bottom: 2rem;">
-    <div class="container">
-      <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-        <span class="hero-tag" style="background-color: rgba(244, 163, 0, 0.08); color: var(--accent-hover);">Bulletin</span>
-        <h2 class="section-title">Media Center & Notices</h2>
-        <p class="section-subtitle">Stay informed with scheduled programs, public alerts, administrative decisions, and recent project completions in active Indian districts.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- News Portal Grid -->
+  <!-- News Section -->
   <section class="section">
     <div class="container">
-      <div class="news-portal-grid">
-        <!-- Main news feed columns -->
-        <div>
-          <!-- Category: Latest News -->
-          <h2 class="mgmt-section-header" style="margin-top: 0;"><i data-lucide="newspaper" style="vertical-align: middle; margin-right: 0.5rem; color: var(--secondary);"></i> Latest Press Releases & News</h2>
-          <div class="news-feed-wrapper" id="portal-news-col" style="margin-bottom: 3.5rem;">
-            <!-- Dynamic News Rendered here -->
-          </div>
-
-          <!-- Category: Announcements -->
-          <h2 class="mgmt-section-header"><i data-lucide="megaphone" style="vertical-align: middle; margin-right: 0.5rem; color: var(--secondary);"></i> Academic & General Announcements</h2>
-          <div class="news-feed-wrapper" id="portal-announcements-col" style="margin-bottom: 3.5rem;">
-            <!-- Dynamic Announcements Rendered here -->
-          </div>
-
-          <!-- Category: Notices -->
-          <h2 class="mgmt-section-header"><i data-lucide="bell" style="vertical-align: middle; margin-right: 0.5rem; color: var(--secondary);"></i> Administrative Board Notices</h2>
-          <div class="news-feed-wrapper" id="portal-notices-col">
-            <!-- Dynamic Notices Rendered here -->
-          </div>
-        </div>
-
-        <!-- Sidebar for Upcoming Events -->
-        <div>
-          <div class="events-sidebar" id="events">
-            <h3 class="sidebar-title"><i data-lucide="calendar"></i> Event Calendar</h3>
-            <div class="sidebar-events-list" id="portal-events-sidebar">
-              <!-- Dynamic Events Rendered here -->
-            </div>
-          </div>
-        </div>
+      <div class="vmo-card" style="text-align: center; padding: 5rem 2rem; max-width: 600px; margin: 0 auto; border-top: 4px solid var(--secondary);">
+        <i data-lucide="bell-off" style="width: 48px; height: 48px; color: var(--secondary); margin-bottom: 1.5rem; display: inline-block;"></i>
+        <h2 style="color: var(--primary); margin-bottom: 0.5rem; font-size: 1.8rem; font-weight: 700;">News & Announcements</h2>
+        <p style="color: var(--text-muted); font-size: 1.15rem; margin: 0; line-height: 1.6;">No announcements available at the moment.</p>
       </div>
     </div>
   </section>
+
+  <!-- Hidden elements to preserve selectors -->
+  <div id="portal-news-col" style="display:none;"></div>
+  <div id="portal-announcements-col" style="display:none;"></div>
+  <div id="portal-notices-col" style="display:none;"></div>
+  <div id="portal-events-sidebar" style="display:none;"></div>
 
   <!-- Footer (Dynamic) -->
   <footer id="footer-placeholder" class="footer"></footer>
@@ -84,8 +91,8 @@
 
   <!-- Scripts -->
   <script src="https://unpkg.com/lucide@latest"></script>
-  <script src="assets/js/data.js"></script>
-  <script src="assets/js/components.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/data.js?v=2.0.0"></script>
+  <script src="assets/js/components.js?v=2.0.0"></script>
+  <script src="assets/js/main.js?v=2.0.0"></script>
 </body>
 </html>

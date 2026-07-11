@@ -38,10 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
     navbarPlaceholder.innerHTML = `
       <div class="container">
         <a href="index.html" class="nav-brand">
-          <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=100&q=80" alt="RIT Logo" class="nav-logo">
+          <img src="assets/images/logo.png" alt="RIT Logo" class="nav-logo" style="background-color: #ffffff; border-radius: 50%; padding: 2px;">
           <div class="nav-title-wrapper">
-            <span class="nav-title">RIT SOCIETY</span>
-            <span class="nav-subtitle">Education & Welfare</span>
+            <span class="nav-title">RIT Education and Welfare Society</span>
           </div>
         </a>
         <ul class="nav-menu" id="nav-menu">
@@ -101,9 +100,15 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="container">
         <div class="footer-grid">
           <div class="footer-col-about">
-            <h3>RIT Education & Welfare Society</h3>
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.5rem;">
+              <img src="assets/images/logo.png" alt="RIT Logo" style="height: 60px; width: 60px; object-fit: contain; background: white; padding: 2px; border-radius: 50%;">
+              <div>
+                <h3 style="margin: 0; font-size: 1.25rem;">RIT Education and Welfare Society</h3>
+                <span style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px;">Foundation for a Personality</span>
+              </div>
+            </div>
             <p class="footer-about-text">
-              Registered under the Societies Registration Act, 1860, we are a leading Indian non-profit organization dedicated to expanding qualitative education, rural computer literacy, skill training, and socio-economic support initiatives.
+              Registered under the Rajasthan Societies Registration Act, 1958 (Act No. 28 of 1958), RIT Education and Welfare Society is dedicated to community empowerment, skill training, and social welfare initiatives.
             </p>
             <div class="top-socials">
               <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
@@ -152,8 +157,8 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; ${new Date().getFullYear()} RIT Education & Welfare Society. All Rights Reserved.</p>
-          <p>Registered NGO Act XXI of 1860 | 80G & 12A Compliant Portal</p>
+          <p>&copy; ${new Date().getFullYear()} RIT Education and Welfare Society. All Rights Reserved.</p>
+          <p>Registered under the Rajasthan Societies Registration Act, 1958 (Act No. 28 of 1958)</p>
         </div>
       </div>
     `;

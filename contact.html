@@ -3,9 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - RIT Education & Welfare Society</title>
-  <meta name="description" content="Get in touch with RIT Education & Welfare Society office. Submit admissions questions, partnership requests, or location directions.">
+  <title>Contact Us - RIT Education and Welfare Society</title>
+  <meta name="description" content="Get in touch with the RIT Education and Welfare Society office in Kota, Rajasthan. Find official address, email, and phone coordinates.">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/RIT%20logo%202.png">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact Us - RIT Education and Welfare Society">
+  <meta property="og:description" content="Contact credentials and location map of RIT Education and Welfare Society. Headquartered in Kota, Rajasthan.">
+  <meta property="og:image" content="assets/images/RIT%20logo%202.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Contact Us - RIT Education and Welfare Society">
+  <meta property="twitter:description" content="Contact credentials and location map of RIT Education and Welfare Society. Headquartered in Kota, Rajasthan.">
+  <meta property="twitter:image" content="assets/images/RIT%20logo%202.png">
+
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "RIT Education and Welfare Society",
+    "url": "index.html",
+    "logo": "assets/images/RIT logo 2.png",
+    "foundingDate": "2014",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "B-9, Shri Ram Colony, Borkheda",
+      "addressLocality": "Kota",
+      "addressRegion": "Rajasthan",
+      "postalCode": "324001",
+      "addressCountry": "IN"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-96676-09999",
+      "contactType": "Enquiry Desk",
+      "email": "riteducation013@gmail.com"
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -43,28 +82,28 @@
             <div class="contact-detail-card">
               <div class="contact-detail-icon"><i data-lucide="map-pin"></i></div>
               <div class="contact-detail-info">
-                <h4>Registered Campus Location</h4>
+                <h4>Address</h4>
                 <p>B-9, Shri Ram Colony, Borkheda, Kota - 324001, Rajasthan, India</p>
               </div>
             </div>
             <div class="contact-detail-card">
               <div class="contact-detail-icon"><i data-lucide="phone"></i></div>
               <div class="contact-detail-info">
-                <h4>Telephone Connections</h4>
+                <h4>Telephone</h4>
                 <p>+91 96676 09999</p>
               </div>
             </div>
             <div class="contact-detail-card">
               <div class="contact-detail-icon"><i data-lucide="mail"></i></div>
               <div class="contact-detail-info">
-                <h4>Electronic Correspondence</h4>
+                <h4>E-Mail</h4>
                 <p>riteducation013@gmail.com</p>
               </div>
             </div>
           </div>
 
-          <!-- Maps frame -->
-          <div class="contact-map-placeholder" style="height: 350px;">
+          <!-- Maps frame directly below contact info -->
+          <div class="contact-map-placeholder" style="height: 300px; margin-top: 1.5rem;">
             <iframe 
               src="https://maps.google.com/maps?q=25.17873,%2075.88186&t=&z=15&ie=UTF8&iwloc=&output=embed" 
               allowfullscreen="" 
@@ -77,7 +116,7 @@
         <!-- Form Column -->
         <div class="contact-form-wrapper">
           <h3 style="color: var(--primary); font-size: 1.5rem; margin-bottom: 0.5rem;">Dispatch Enquiry</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem;">Please submit your query details below. Our community desks will respond promptly.</p>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Please submit your query details below. Our coordination cell will respond promptly.</p>
           <form class="contact-form" id="contact-form">
             <div class="form-group">
               <label for="name">Your Name *</label>
@@ -108,6 +147,14 @@
           </form>
         </div>
       </div>
+
+      <!-- Infrastructure Photos Section -->
+      <div style="margin-top: 4rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+        <div class="vmo-card" style="margin-bottom: 0; padding: 1.5rem; border-top: 4px solid var(--secondary);">
+          <h4 style="color: var(--primary); margin-bottom: 1rem; font-weight: 700;">Society Headquarters Building</h4>
+          <img src="assets/images/photos/rit building.jpg" alt="RIT Education and Welfare Society Headquarters Building" style="width: 100%; height: 240px; object-fit: cover; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);" loading="lazy">
+        </div>
+      </div>
     </div>
   </section>
 
@@ -119,8 +166,8 @@
 
   <!-- Scripts -->
   <script src="https://unpkg.com/lucide@latest"></script>
-  <script src="assets/js/data.js"></script>
-  <script src="assets/js/components.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/data.js?v=2.0.0"></script>
+  <script src="assets/js/components.js?v=2.0.0"></script>
+  <script src="assets/js/main.js?v=2.0.0"></script>
 </body>
 </html>

@@ -3,9 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Media Gallery - RIT Education & Welfare Society</title>
-  <meta name="description" content="View photos of our skill development batches, healthcare camps, blood donation drives, tree plantations, and society celebrations.">
+  <title>Media Gallery - RIT Education and Welfare Society</title>
+  <meta name="description" content="View the media archive of RIT Education and Welfare Society. Official photographs of our skill centers and welfare activities.">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/RIT%20logo%202.png">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Media Gallery - RIT Education and Welfare Society">
+  <meta property="og:description" content="Media archive of RIT Education and Welfare Society. Headquartered in Kota, Rajasthan.">
+  <meta property="og:image" content="assets/images/RIT%20logo%202.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Media Gallery - RIT Education and Welfare Society">
+  <meta property="twitter:description" content="Media archive of RIT Education and Welfare Society. Headquartered in Kota, Rajasthan.">
+  <meta property="twitter:image" content="assets/images/RIT%20logo%202.png">
+
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "RIT Education and Welfare Society",
+    "url": "index.html",
+    "logo": "assets/images/RIT logo 2.png",
+    "foundingDate": "2014",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "B-9, Shri Ram Colony, Borkheda",
+      "addressLocality": "Kota",
+      "addressRegion": "Rajasthan",
+      "postalCode": "324001",
+      "addressCountry": "IN"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-96676-09999",
+      "contactType": "Enquiry Desk",
+      "email": "riteducation013@gmail.com"
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -36,19 +75,7 @@
         <p class="section-subtitle">A collection of real-time images capturing vocational trainings, student programs, and welfare initiatives.</p>
       </div>
 
-      <!-- Filter Buttons (Matches user requested categories) -->
-      <div class="gallery-filter-tabs">
-        <button class="gallery-filter-btn active" data-filter="All">All Images</button>
-        <button class="gallery-filter-btn" data-filter="Education">Education</button>
-        <button class="gallery-filter-btn" data-filter="Seminars">Seminars</button>
-        <button class="gallery-filter-btn" data-filter="Workshops">Workshops</button>
-        <button class="gallery-filter-btn" data-filter="Skill Development">Skill Development</button>
-        <button class="gallery-filter-btn" data-filter="Community Welfare">Community Welfare</button>
-        <button class="gallery-filter-btn" data-filter="Women Empowerment">Women Empowerment</button>
-        <button class="gallery-filter-btn" data-filter="Blood Donation">Blood Donation</button>
-        <button class="gallery-filter-btn" data-filter="Plantation Drive">Plantation Drive</button>
-        <button class="gallery-filter-btn" data-filter="Celebrations">Celebrations</button>
-      </div>
+
 
       <!-- Gallery Grid -->
       <div class="gallery-grid" id="full-gallery-container">
@@ -64,7 +91,6 @@
       <img id="lightbox-img" src="" alt="Zoomed view" class="lightbox-img">
       <div class="lightbox-caption">
         <h4 id="lightbox-title">Image Title</h4>
-        <span id="lightbox-category">Category</span>
       </div>
     </div>
   </div>
@@ -77,8 +103,8 @@
 
   <!-- Scripts -->
   <script src="https://unpkg.com/lucide@latest"></script>
-  <script src="assets/js/data.js"></script>
-  <script src="assets/js/components.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/data.js?v=2.0.0"></script>
+  <script src="assets/js/components.js?v=2.0.0"></script>
+  <script src="assets/js/main.js?v=2.0.0"></script>
 </body>
 </html>
