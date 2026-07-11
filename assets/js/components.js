@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
           <li><a href="index.html" class="nav-link" data-page="index">Home</a></li>
           <li><a href="about.html" class="nav-link" data-page="about">About Us</a></li>
           <li><a href="management.html" class="nav-link" data-page="management">Management</a></li>
-          <li><a href="programs.html" class="nav-link" data-page="programs">Activities & Programs</a></li>
           <li><a href="gallery.html" class="nav-link" data-page="gallery">Gallery</a></li>
           <li><a href="downloads.html" class="nav-link" data-page="downloads">Downloads</a></li>
           <li><a href="news.html" class="nav-link" data-page="news">News</a></li>
@@ -126,16 +125,6 @@ document.addEventListener("DOMContentLoaded", () => {
               <li><a href="downloads.html">Downloads Library</a></li>
               <li><a href="news.html">News & Notices</a></li>
               <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="footer-col-title">Activities</h4>
-            <ul class="footer-links">
-              <li><a href="programs.html#skill-development">Skill Development</a></li>
-              <li><a href="programs.html#womens-empowerment">Women Empowerment</a></li>
-              <li><a href="programs.html#digital-literacy">Digital Literacy</a></li>
-              <li><a href="programs.html#career-guidance">Career Guidance</a></li>
-              <li><a href="programs.html#youth-development">Youth Programs</a></li>
             </ul>
           </div>
           <div>

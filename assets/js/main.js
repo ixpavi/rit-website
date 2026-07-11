@@ -16,7 +16,6 @@ function initPageContent() {
   // Route specific initializations
   if (pageName === "index") {
     renderHomepageHero();
-    renderHomepagePrograms();
     renderHomepageNews("news");
     initNewsTabListeners();
     renderHomepageManagement();
@@ -28,8 +27,6 @@ function initPageContent() {
     renderAboutAchievements();
   } else if (pageName === "management") {
     renderFullManagementBoard();
-  } else if (pageName === "programs") {
-    renderFullPrograms();
   } else if (pageName === "gallery") {
     renderFullGallery();
   } else if (pageName === "downloads") {
@@ -149,18 +146,7 @@ function initHeroSliderLogic() {
   startAutoSlide();
 }
 
-// 2. Render Homepage Programs Preview (Activities & Programs)
-function renderHomepagePrograms() {
-  const container = document.getElementById("homepage-programs-container");
-  if (!container) return;
 
-  container.innerHTML = `
-    <div class="placeholder-card" style="grid-column: 1 / -1; text-align: center; padding: 3rem; background: var(--bg-card); border-radius: var(--radius-lg); border: 1px solid var(--border); width: 100%;">
-      <i data-lucide="info" style="width: 32px; height: 32px; color: var(--secondary); margin-bottom: 1rem; display: inline-block;"></i>
-      <p style="color: var(--text-muted); font-size: 1.1rem; margin: 0;">Program details will be updated soon.</p>
-    </div>
-  `;
-}
 
 // 3. Render Homepage News tabs
 function renderHomepageNews(category) {
@@ -294,24 +280,7 @@ function renderFullManagementBoard() {
 }
 
 
-/* ==========================================
-   ACTIVITIES & PROGRAMS PAGE
-   ========================================== */
 
-function renderFullPrograms() {
-  const container = document.getElementById("full-programs-container");
-  if (!container) return;
-
-  container.innerHTML = `
-    <div class="section">
-      <div class="container" style="text-align: center; padding: 4rem 2rem;">
-        <i data-lucide="info" style="width: 48px; height: 48px; color: var(--secondary); margin-bottom: 1.5rem; display: inline-block;"></i>
-        <h2 style="color: var(--primary); margin-bottom: 1rem;">Activities & Programs</h2>
-        <p style="color: var(--text-muted); font-size: 1.2rem; max-width: 600px; margin: 0 auto;">Program details will be updated soon.</p>
-      </div>
-    </div>
-  `;
-}
 
 
 /* ==========================================

@@ -31,8 +31,8 @@ const RIT_DATA = {
       title: "Vocational and Computer Training",
       desc: "We coordinate dedicated learning programs for community empowerment, livelihood growth, and digital literacy.",
       image: "assets/images/photos/photo_12.jpg",
-      ctaPrimary: "Our Programs",
-      ctaPrimaryLink: "programs.html",
+      ctaPrimary: "About Us",
+      ctaPrimaryLink: "about.html",
       ctaSecondary: "Media Gallery",
       ctaSecondaryLink: "gallery.html"
     },
