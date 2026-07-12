@@ -521,8 +521,44 @@ function initContactFormValidation() {
       return;
     }
 
-    // Success response simulation
-    alert(`Thank you, ${name}! Your enquiry has been received. Our coordination cell will reach out to you within 24-48 hours.`);
-    form.reset();
+    // Submit button state
+    const submitBtn = form.querySelector("button[type='submit']");
+    const originalBtnText = submitBtn.innerHTML;
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = 'Sending...';
+
+    // Prepare form data
+    const formData = new FormData(form);
+    
+    // Add additional formatting fields for Web3Forms email body
+    formData.append("from_name", name);
+    formData.append("subject", `New RIT Website Enquiry: ${subject}`);
+
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        alert(`Thank you, ${name}! Your enquiry has been received and emailed. Our coordination cell will reach out to you within 24-48 hours.`);
+        form.reset();
+      } else {
+        // Check for missing access key or other issues
+        if (data.message && data.message.includes("Access Key")) {
+          alert("Submission error: Web3Forms access key is missing or invalid. Please configure it in your HTML files.");
+        } else {
+          alert(`Submission failed: ${data.message || "Unknown error occurred"}. Please try again later.`);
+        }
+      }
+    })
+    .catch(error => {
+      console.error("Error submitting form:", error);
+      alert("An error occurred while submitting your enquiry. Please check your network connection and try again.");
+    })
+    .finally(() => {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalBtnText;
+    });
   });
 }
