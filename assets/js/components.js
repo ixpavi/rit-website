@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <span class="floating-label">WhatsApp</span>
             <span class="floating-btn floating-whatsapp"><i data-lucide="message-square"></i></span>
           </a>
-          <a href="https://maps.google.com/?q=25.17873,75.88186" target="_blank" rel="noopener" class="floating-item">
+          <a href="https://maps.google.com/?q=25.178722,75.881917" target="_blank" rel="noopener" class="floating-item">
             <span class="floating-label">Get Directions</span>
             <span class="floating-btn floating-directions"><i data-lucide="map-pin"></i></span>
           </a>
@@ -200,6 +200,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     backToTopBtn.addEventListener("click", () => {
       window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+      document.documentElement.scrollTo({
         top: 0,
         behavior: "smooth"
       });
